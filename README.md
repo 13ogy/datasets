@@ -39,3 +39,25 @@ RangeIndex: 503760 entries, 0 to 503759
 Columns: 115 entries, Time to Apt114
 dtypes: datetime64[ns](1), float32(114)
 memory usage: 222.9 MB
+
+# doc 4
+all three :
+RangeIndex: 12890736 entries, 0 to 12890735
+Data columns (total 6 columns):
+ #   Column                Dtype         
+---  ------                -----         
+ 0   Customer              int64         
+ 1   Generator Capacity    float32       
+ 2   Postcode              int64         
+ 3   Consumption Category  object        
+ 4   Consumption           float32       
+ 5   DateTime              datetime64[ns]
+dtypes: datetime64[ns](1), float32(2), int64(2), object(1)
+memory usage: 491.7+ MB
+-> pivoted : all three :
+atetimeIndex: 17520 entries, 2012-07-01 00:00:00 to 2013-06-30 23:30:00
+Columns: 300 entries, 1 to 300
+dtypes: float32(300)
+memory usage: 20.2 MB
+Customer                  1         2         3    ...     298     299       300
+DateTime                                           ...
